@@ -11,6 +11,7 @@ Eagy Broker is a Python-based simulation tool that models real-time stock price 
 - [Understanding the Simulation](#understanding-the-simulation)
 - [Error Handling](#error-handling)
 - [Creating and Using a Virtual Environment](#creating-and-using-a-virtual-environment)
+- [Unit Testint](#running-unit-tests)
 
 ## Features
 
@@ -119,3 +120,24 @@ Using a virtual environment is a good practice to manage project dependencies an
    ```bash
    deactivate
    ```
+
+## Running Unit Tests
+
+Unit tests are provided to ensure the correctness of key functionalities in the Eagy Broker simulation. These tests validate that the system behaves as expected under various conditions.
+
+### Steps to Run Unit Tests:
+
+1. **Navigate to the Project Directory**:
+   - Open your terminal or command prompt and navigate to the directory where the project is located.
+
+2. **Run the Tests**:
+   - Execute the unit tests using the following command:
+     ```bash
+     python -m unittest test_eagy_broker.py
+     ```
+
+3. **View Test Results**:
+   - The test results will be displayed in the terminal, showing which tests passed and any errors or failures that occurred.
+
+These tests cover the initialization of prices, recording of buy/sell actions, price updates, and the generation of buy/sell signals.
+
